@@ -12,7 +12,7 @@
   ],
   "iconUrl": "http://shaman.io/images/shaman-nuget-icon.png",
   "dependencies": {
-    "Shaman.ValueString": "1.0.2.3"
+    "Shaman.ValueString": "1.0.2.19"
   },
   "projectUrl": "http://shaman.io/",
   "compilationOptions": {
@@ -21,13 +21,7 @@
   },
   "compile": [],
   "frameworks": {
-    "net45+win+wpa81": {
-      "frameworkAssemblies": {
-        "System.Runtime": "4.0.0.0",
-        "System.Runtime.Extensions": "4.0.0.0",
-        "System.Collections": "4.0.0.0",
-        "System.Text.RegularExpressions": "4.0.0.0"
-      }
-    }
+    "netstandard1.3": {},
+    "net46": {}
   }
 }
