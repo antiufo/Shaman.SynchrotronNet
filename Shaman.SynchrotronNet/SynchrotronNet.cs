@@ -251,7 +251,7 @@ namespace SynchrotronNet
 
         private static void processCommon(ref commonOrDifferentThing common, List<commonOrDifferentThing> result)
         {
-            if (common.common.Count > 0)
+            if (common.common != null && common.common.Count > 0)
             {
                 common.common.Reverse();
                 result.Add(common);
@@ -299,7 +299,10 @@ namespace SynchrotronNet
                 }
 
                 if (tail1 >= 0)
+                {
+                    if (common.common == null) common.common = new List<strink>();
                     common.common.Add(file1[tail1]);
+                }
             }
 
             processCommon(ref common, result);
